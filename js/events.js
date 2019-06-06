@@ -6,8 +6,14 @@ function getIt() {
 }
 
 function frameIt() {
-  $('img').on('load', function() {
-    $('img').append(.tasty);
+
+}
+
+function pressIt() {
+  $('form').on('keydown', function(key){
+      if(key.which === 71){
+        alert('g was pressed');
+      }
   })
 }
 
@@ -15,5 +21,4 @@ $(document).ready(function(){
 
 // call functions here
 getIt();
-frameIt();
 });
